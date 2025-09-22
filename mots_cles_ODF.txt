@@ -1,0 +1,121 @@
+Cat‚gorie	Mot-cl‚ (FR)	Keyword (EN)
+Conseil & Strat‚gie	conseil strat‚gique	strategic consulting
+Conseil & Strat‚gie	assistance technique	technical assistance
+Conseil & Strat‚gie	appui institutionnel	institutional support
+Conseil & Strat‚gie	accompagnement personnalis‚	tailored support
+Conseil & Strat‚gie	accompagnement … l?innovation	innovation support
+Conseil & Strat‚gie	accompagnement … la lev‚e de fonds	fundraising support
+Conseil & Strat‚gie	d‚veloppement organisationnel	organizational development
+Conseil & Strat‚gie	d‚veloppement de capacit‚s	capacity building
+Conseil & Strat‚gie	structuration de programme	program structuring
+Conseil & Strat‚gie	ing‚nierie de projet	project design
+Conseil & Strat‚gie	gestion de projet	project management
+Conseil & Strat‚gie	pilotage de programme	program steering
+Conseil & Strat‚gie	strat‚gie de croissance	growth strategy
+Conseil & Strat‚gie	expertise sectorielle	sector expertise
+Conseil & Strat‚gie	‚valuation de projets	project evaluation
+Conseil & Strat‚gie	due diligence	due diligence
+Conseil & Strat‚gie	mise en ?uvre de projet	project implementation
+Conseil & Strat‚gie	‚laboration de feuille de route	roadmap development
+Conseil & Strat‚gie	ing‚nierie financiŠre	financial engineering
+Conseil & Strat‚gie	diagnostic strat‚gique	strategic diagnosis
+Conseil & Strat‚gie	suivi-‚valuation	monitoring and evaluation
+Conseil & Strat‚gie	plan d?action op‚rationnel	operational action plan
+Conseil & Strat‚gie	partenariat public-priv‚	public-private partnership
+Conseil & Strat‚gie	animation d?‚cosystŠme	ecosystem animation
+Conseil & Strat‚gie	analyse d?impact	impact analysis
+Conseil & Strat‚gie	facilitation de partenariats	partnership facilitation
+Conseil & Strat‚gie	cartographie des acteurs	stakeholder mapping
+Conseil & Strat‚gie	transfert de comp‚tences	knowledge transfer
+Conseil & Strat‚gie	innovation collaborative	collaborative innovation
+Conseil & Strat‚gie	open innovation	open innovation
+Conseil & Strat‚gie	d‚veloppement ‚conomique	economic development
+Conseil & Strat‚gie	d‚veloppement d?‚cosystŠmes	ecosystem development
+Conseil & Strat‚gie	strat‚gie d?expansion	expansion strategy
+Conseil & Strat‚gie	strat‚gie de d‚veloppement	development strategy
+Innovation & Transfert technologique	valorisation de la recherche	research valorization
+Innovation & Transfert technologique	transfert de technologie	technology transfer
+Innovation & Transfert technologique	maturation technologique	technology maturation
+Innovation & Transfert technologique	industrialisation de prototypes	prototype industrialization
+Innovation & Transfert technologique	co-d‚veloppement technologique	technological co-development
+Innovation & Transfert technologique	propri‚t‚ intellectuelle	intellectual property
+Innovation & Transfert technologique	r‚sultats de recherche	research results
+Innovation & Transfert technologique	niveau de maturit‚ technologique	technology readiness level
+Innovation & Transfert technologique	spin-off universitaire	university spin-off
+Innovation & Transfert technologique	collaboration recherche-industrie	research-industry collaboration
+Innovation & Transfert technologique	start-up technologique	technology startup
+Innovation & Transfert technologique	portefeuille technologique	technology portfolio
+Innovation & Transfert technologique	commercialisation d?innovations	innovation commercialization
+Innovation & Transfert technologique	preuve de concept	proof of concept
+Innovation & Transfert technologique	prototypage	prototyping
+Innovation & Transfert technologique	incubateur technologique	technology incubator
+Innovation & Transfert technologique	accompagnement … la R&D	R&D support
+Innovation & Transfert technologique	exploitation de brevets	patent exploitation
+Opportunit‚s de financement	appel … projets	call for projects
+Opportunit‚s de financement	appel … propositions	call for proposals
+Opportunit‚s de financement	appel … manifestation d?int‚rˆt	call for expression of interest
+Opportunit‚s de financement	appel … candidatures	call for applications
+Opportunit‚s de financement	appel … consultants	call for consultants
+Opportunit‚s de financement	subvention … l?innovation	innovation grant
+Opportunit‚s de financement	financement de projet R&D	R&D project funding
+Opportunit‚s de financement	programme d?accompagnement	support program
+Opportunit‚s de financement	fonds de soutien	support fund
+Opportunit‚s de financement	concours d?innovation	innovation competition
+Opportunit‚s de financement	programme d?incubation	incubation program
+Opportunit‚s de financement	programme d?acc‚l‚ration	acceleration program
+Opportunit‚s de financement	mission de conseil	consulting assignment
+Opportunit‚s de financement	march‚ public	public procurement
+Opportunit‚s de financement	partenariat strat‚gique	strategic partnership
+Opportunit‚s de financement	prestation de services	service delivery
+Opportunit‚s de financement	mission d?expertise	expert mission
+Deeptech & Technologies	deeptech	deeptech
+Deeptech & Technologies	biotechnologie	biotechnology
+Deeptech & Technologies	medtech	medtech
+Deeptech & Technologies	greentech	greentech
+Deeptech & Technologies	agritech	agritech
+Deeptech & Technologies	climatetech	climatetech
+Deeptech & Technologies	healthtech	healthtech
+Deeptech & Technologies	nanotechnologie	nanotechnology
+Deeptech & Technologies	robotique	robotics
+Deeptech & Technologies	intelligence artificielle	artificial intelligence
+Deeptech & Technologies	machine learning	machine learning
+Deeptech & Technologies	industrie 4.0	industry 4.0
+Deeptech & Technologies	mat‚riaux avanc‚s	advanced materials
+Deeptech & Technologies	technologies propres	clean technologies
+Deeptech & Technologies	‚nergies renouvelables	renewable energy
+Deeptech & Technologies	cybers‚curit‚	cybersecurity
+Deeptech & Technologies	data science	data science
+Deeptech & Technologies	internet des objets	internet of things
+D‚veloppement & Impact	d‚veloppement durable	sustainable development
+D‚veloppement & Impact	r‚silience climatique	climate resilience
+D‚veloppement & Impact	inclusion ‚conomique	economic inclusion
+D‚veloppement & Impact	autonomisation par l?innovation	empowerment through innovation
+D‚veloppement & Impact	innovation sociale	social innovation
+D‚veloppement & Impact	croissance inclusive	inclusive growth
+D‚veloppement & Impact	impact soci‚tal	social impact
+D‚veloppement & Impact	autonomisation des jeunes	youth empowerment
+D‚veloppement & Impact	digitalisation des services	services digitalization
+D‚veloppement & Impact	souverainet‚ technologique	technological sovereignty
+D‚veloppement & Impact	d‚veloppement territorial	territorial development
+D‚veloppement & Impact	transformation num‚rique	digital transformation
+D‚veloppement & Impact	autonomisation des chercheurs	researcher empowerment
+D‚veloppement & Impact	int‚gration de la diaspora	diaspora integration
+Open Innovation, PME, Industrie & Impact	open innovation	open innovation
+Open Innovation, PME, Industrie & Impact	innovation ouverte	open innovation
+Open Innovation, PME, Industrie & Impact	collaboration intersectorielle	cross-sector collaboration
+Open Innovation, PME, Industrie & Impact	partenariats industriels	industrial partnerships
+Open Innovation, PME, Industrie & Impact	innovation orient‚e march‚	market-driven innovation
+Open Innovation, PME, Industrie & Impact	PME innovantes	innovative SMEs
+Open Innovation, PME, Industrie & Impact	entrepreneuriat industriel	industrial entrepreneurship
+Open Innovation, PME, Industrie & Impact	accŠs au march‚	market access
+Open Innovation, PME, Industrie & Impact	renforcement des chaŒnes de valeur	value chain strengthening
+Open Innovation, PME, Industrie & Impact	inclusion ‚conomique	economic inclusion
+Open Innovation, PME, Industrie & Impact	impact ‚conomique	economic impact
+Open Innovation, PME, Industrie & Impact	impact soci‚tal	social impact
+Open Innovation, PME, Industrie & Impact	autonomisation ‚conomique	economic empowerment
+Open Innovation, PME, Industrie & Impact	comp‚titivit‚ industrielle	industrial competitiveness
+Open Innovation, PME, Industrie & Impact	recherche appliqu‚e	applied research
+Open Innovation, PME, Industrie & Impact	mont‚e en comp‚tences	skills development
+Open Innovation, PME, Industrie & Impact	transfert de savoir-faire	know-how transfer
+Open Innovation, PME, Industrie & Impact	co-d‚veloppement	co-development
+Open Innovation, PME, Industrie & Impact	leadership technologique	technology leadership

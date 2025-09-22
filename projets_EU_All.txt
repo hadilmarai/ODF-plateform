@@ -1,0 +1,95 @@
+Titre: Space Data Economy
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-EUSPA-2026-SPACE-02-51?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 22 October 2025
+Date limite: 24 February 2026
+Titre: Innovative space-based applications enhancing capabilities for a resilient Europe
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-EUSPA-2026-SPACE-02-52?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 22 October 2025
+Date limite: 24 February 2026
+Titre: MSCA Choose Europe for Science 2025
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-MSCA-2025-COFUND-02-01?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 01 October 2025
+Date limite: 03 December 2025
+Titre: Building a trustworthy social media sphere: countering disinformation on social media for young Europeans
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/PPPA-2025-DISINFORMATION-YOUNG?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 30 September 2025
+Date limite: 02 December 2025
+Titre: On-site innovative robotic and automated solutions and techniques for more sustainable and less disruptive building renovation and construction
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2026-02-D4-01?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 16 September 2025
+Date limite: 17 February 2026
+Titre: Extending the lifetime of crystalline silicon PV modules (EUPI-PV Partnership)
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2026-02-D3-12?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 16 September 2025
+Date limite: 17 February 2026
+Titre: New CO2 capture technologies
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2026-02-D3-24?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 16 September 2025
+Date limite: 17 February 2026
+Titre: Underground Thermal Energy Storage in dense urban areas
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2026-02-D3-22?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 16 September 2025
+Date limite: 17 February 2026
+Titre: De-risking wave energy technology development through transnational pre-commercial procurement of wave energy research and development
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2026-02-D3-13?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 16 September 2025
+Date limite: 17 February 2026
+Titre: Development of innovative solutions strengthening the security of renewable energy value chains
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2026-02-D3-14?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 16 September 2025
+Date limite: 17 February 2026
+Titre: Towards commercialisation of Perovskite PV and development of dedicated manufacturing equipment (EUPI-PV Partnership)
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2026-02-D3-10?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 16 September 2025
+Date limite: 17 February 2026
+Titre: Innovative solutions for a generative AI-powered digital spine of the EU energy system
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2026-02-D3-19?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 16 September 2025
+Date limite: 17 February 2026
+Titre: Innovative tools and services to manage and empower energy communities
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2026-02-D3-20?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 16 September 2025
+Date limite: 17 February 2026
+Titre: Next generation distribution substation for increasing the system resilience
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2026-02-D3-18?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 16 September 2025
+Date limite: 17 February 2026
+Titre: Demonstration of thermal energy storage solutions for solar thermal plants and systems
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2026-02-D3-05?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 16 September 2025
+Date limite: 17 February 2026
+Titre: Understand and minimise the environmental impacts of offshore wind energy
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2026-02-D3-08?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 16 September 2025
+Date limite: 17 February 2026
+Titre: Innovative pathways for low carbon and climate resilient building stock and built environment (Built4People Partnership)
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2026-02-D4-03?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 16 September 2025
+Date limite: 17 February 2026
+Titre: Innovative approaches for the deployment of Positive Energy Districts
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2026-02-D4-04?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 16 September 2025
+Date limite: 17 February 2026
+Titre: Smarter buildings as part of the energy system for increased efficiency and flexibility – Societal Readiness Pilot
+Lien: https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/topic-details/HORIZON-CL5-2026-02-D4-02?isExactMatch=true&status=31094501,31094502&order=DESC&pageNumber=1&pageSize=50&sortBy=startDate
+Statut: Forthcoming
+Date d'ouverture: 16 September 2025
+Date limite: 17 February 2026

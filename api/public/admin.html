@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODF Analysis Scripts - Admin Panel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .scripts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .script-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 25px;
+            background: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+
+        .script-card:hover {
+            border-color: #667eea;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .script-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .script-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            margin-right: 15px;
+            color: white;
+        }
+
+        .eu-icon {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+        }
+
+        .uk-icon {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+        }
+
+        .script-title {
+            font-size: 1.4em;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .script-description {
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .script-status {
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .status-idle {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-running {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .script-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .logs-section {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .logs-content {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            max-height: 300px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .alert {
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .alert-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .alert-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 ODF Analysis Scripts</h1>
+            <p>Execute and monitor EU and UK funding analysis scripts</p>
+        </div>
+
+        <div class="content">
+            <div id="alerts"></div>
+
+            <div class="scripts-grid">
+                <!-- EU Script Card -->
+                <div class="script-card">
+                    <div class="script-header">
+                        <div class="script-icon eu-icon">🇪🇺</div>
+                        <div>
+                            <div class="script-title">EU Analysis Script</div>
+                            <div style="color: #7f8c8d; font-size: 0.9em;">horizoneu.py</div>
+                        </div>
+                    </div>
+                    
+                    <div class="script-description">
+                        Scrapes EU funding opportunities from Horizon Europe portal, performs LLM-based analysis, and generates Excel output with relevant projects.
+                    </div>
+                    
+                    <div id="eu-status" class="script-status status-idle">
+                        Status: Checking...
+                    </div>
+                    
+                    <div class="script-actions">
+                        <button id="eu-execute" class="btn btn-primary" onclick="executeScript('eu')">
+                            <span>▶️</span> Execute EU Script
+                        </button>
+                        <button id="eu-stop" class="btn btn-danger" onclick="stopScript('eu')" disabled>
+                            <span>⏹️</span> Stop Script
+                        </button>
+                        <button id="eu-logs" class="btn btn-secondary" onclick="showLogs('eu')">
+                            <span>📋</span> View Logs
+                        </button>
+                    </div>
+                </div>
+
+                <!-- UK Script Card -->
+                <div class="script-card">
+                    <div class="script-header">
+                        <div class="script-icon uk-icon">🇬🇧</div>
+                        <div>
+                            <div class="script-title">UK Analysis Script</div>
+                            <div style="color: #7f8c8d; font-size: 0.9em;">innovateuk.py</div>
+                        </div>
+                    </div>
+                    
+                    <div class="script-description">
+                        Scrapes UK funding opportunities from UKRI portal, performs text analysis and classification, and generates Excel output with processed data.
+                    </div>
+                    
+                    <div id="uk-status" class="script-status status-idle">
+                        Status: Checking...
+                    </div>
+                    
+                    <div class="script-actions">
+                        <button id="uk-execute" class="btn btn-primary" onclick="executeScript('uk')">
+                            <span>▶️</span> Execute UK Script
+                        </button>
+                        <button id="uk-stop" class="btn btn-danger" onclick="stopScript('uk')" disabled>
+                            <span>⏹️</span> Stop Script
+                        </button>
+                        <button id="uk-logs" class="btn btn-secondary" onclick="showLogs('uk')">
+                            <span>📋</span> View Logs
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="logs-section" class="logs-section" style="display: none;">
+                <h3>Script Logs</h3>
+                <div id="logs-content" class="logs-content"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Configuration
+        const API_BASE = '';
+        let statusInterval;
+        let token = localStorage.getItem('authToken');
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            checkAuth();
+            updateStatus();
+            startStatusPolling();
+        });
+
+        function checkAuth() {
+            if (!token) {
+                showAlert('Please login first. Redirecting to login...', 'error');
+                setTimeout(() => {
+                    window.location.href = '/login.html';
+                }, 2000);
+                return;
+            }
+        }
+
+        function startStatusPolling() {
+            statusInterval = setInterval(updateStatus, 5000); // Update every 5 seconds
+        }
+
+        async function updateStatus() {
+            try {
+                const response = await fetch(`${API_BASE}/scripts/status`, {
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+
+                if (response.status === 401) {
+                    showAlert('Authentication expired. Please login again.', 'error');
+                    localStorage.removeItem('authToken');
+                    setTimeout(() => window.location.href = '/login.html', 2000);
+                    return;
+                }
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    updateScriptStatus('eu', data.data.eu);
+                    updateScriptStatus('uk', data.data.uk);
+                }
+            } catch (error) {
+                console.error('Error updating status:', error);
+            }
+        }
+
+        function updateScriptStatus(scriptType, status) {
+            const statusElement = document.getElementById(`${scriptType}-status`);
+            const executeBtn = document.getElementById(`${scriptType}-execute`);
+            const stopBtn = document.getElementById(`${scriptType}-stop`);
+
+            if (status.status === 'running') {
+                statusElement.textContent = `Running (${status.runningTime}) - PID: ${status.processId}`;
+                statusElement.className = 'script-status status-running';
+                executeBtn.disabled = true;
+                stopBtn.disabled = false;
+            } else {
+                statusElement.textContent = 'Ready to execute';
+                statusElement.className = 'script-status status-idle';
+                executeBtn.disabled = false;
+                stopBtn.disabled = true;
+            }
+        }
+
+        async function executeScript(scriptType) {
+            const btn = document.getElementById(`${scriptType}-execute`);
+            const originalText = btn.innerHTML;
+            
+            btn.innerHTML = '<div class="loading"></div> Starting...';
+            btn.disabled = true;
+
+            try {
+                const response = await fetch(`${API_BASE}/scripts/execute/${scriptType}`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`,
+                        'Content-Type': 'application/json'
+                    }
+                });
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    showAlert(`${scriptType.toUpperCase()} script started successfully! Estimated duration: ${data.data.estimatedDuration}`, 'success');
+                    updateStatus(); // Immediate status update
+                } else {
+                    showAlert(`Failed to start ${scriptType.toUpperCase()} script: ${data.error}`, 'error');
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                }
+            } catch (error) {
+                showAlert(`Error starting ${scriptType.toUpperCase()} script: ${error.message}`, 'error');
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            }
+        }
+
+        async function stopScript(scriptType) {
+            if (!confirm(`Are you sure you want to stop the ${scriptType.toUpperCase()} script?`)) {
+                return;
+            }
+
+            try {
+                const response = await fetch(`${API_BASE}/scripts/stop/${scriptType}`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    showAlert(`${scriptType.toUpperCase()} script stopped successfully`, 'success');
+                    updateStatus();
+                } else {
+                    showAlert(`Failed to stop ${scriptType.toUpperCase()} script: ${data.error}`, 'error');
+                }
+            } catch (error) {
+                showAlert(`Error stopping ${scriptType.toUpperCase()} script: ${error.message}`, 'error');
+            }
+        }
+
+        async function showLogs(scriptType) {
+            const logsSection = document.getElementById('logs-section');
+            const logsContent = document.getElementById('logs-content');
+            
+            logsContent.textContent = 'Loading logs...';
+            logsSection.style.display = 'block';
+            logsSection.scrollIntoView({ behavior: 'smooth' });
+
+            try {
+                const response = await fetch(`${API_BASE}/scripts/logs/${scriptType}`, {
+                    headers: {
+                        'Authorization': `Bearer ${token}`
+                    }
+                });
+
+                const data = await response.json();
+                
+                if (data.success) {
+                    if (data.data.status === 'not_running') {
+                        logsContent.textContent = `No ${scriptType.toUpperCase()} script is currently running.`;
+                    } else {
+                        const logs = data.data.logs.join('') || 'No output yet...';
+                        const errors = data.data.errors.join('') || '';
+                        logsContent.textContent = `=== OUTPUT ===\n${logs}\n\n=== ERRORS ===\n${errors}`;
+                    }
+                } else {
+                    logsContent.textContent = `Error loading logs: ${data.error}`;
+                }
+            } catch (error) {
+                logsContent.textContent = `Error loading logs: ${error.message}`;
+            }
+        }
+
+        function showAlert(message, type) {
+            const alertsContainer = document.getElementById('alerts');
+            const alert = document.createElement('div');
+            alert.className = `alert alert-${type}`;
+            alert.textContent = message;
+            
+            alertsContainer.appendChild(alert);
+            
+            setTimeout(() => {
+                alert.remove();
+            }, 5000);
+        }
+
+        // Cleanup on page unload
+        window.addEventListener('beforeunload', function() {
+            if (statusInterval) {
+                clearInterval(statusInterval);
+            }
+        });
+    </script>
+</body>
+</html>

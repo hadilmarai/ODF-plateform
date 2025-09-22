@@ -1,0 +1,68 @@
+{
+  "name": "odf-funding-api",
+  "version": "2.0.0",
+  "description": "Unified Express.js API for EU and UK funding opportunities analysis",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "setup:db": "node scripts/setup-database-simple.js",
+    "setup:db-advanced": "node scripts/setup-database.js",
+    "setup": "npm install && npm run setup:db",
+    "setup:full": "npm install && node scripts/quick-setup.js",
+    "migrate": "node scripts/migrate.js",
+    "seed": "node scripts/seed.js",
+    "seed:users": "node scripts/seed.js users",
+    "seed:apikeys": "node scripts/seed.js apikeys",
+    "seed:data": "node scripts/seed.js data",
+    "seed:logs": "node scripts/seed.js logs",
+    "seed:projects": "node scripts/seed.js projects",
+    "seed:tokens": "node scripts/seed.js tokens",
+    "seed:clear": "node scripts/seed.js clear",
+    "seed:status": "node scripts/seed.js status",
+    "test:data": "node scripts/test-data-loading.js",
+    "reload:data": "node scripts/reload-data.js",
+    "migrate:uk-url": "node scripts/migrate-uk-link-to-url.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "install-deps": "npm install"
+  },
+  "keywords": [
+    "funding",
+    "analysis",
+    "eu",
+    "uk",
+    "excel",
+    "api",
+    "express",
+    "jupyter",
+    "notebook"
+  ],
+  "author": "ODF Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "xlsx": "^0.18.5",
+    "node-cron": "^3.0.3",
+    "mysql2": "^3.6.5",
+    "dotenv": "^16.3.1",
+    "jsonwebtoken": "^9.0.2",
+    "bcryptjs": "^2.4.3",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "compression": "^1.7.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
